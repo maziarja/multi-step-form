@@ -1,0 +1,533 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 144rem;
+  margin: 0 auto;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  margin-top: 10.5rem;
+  background-color: hsl(217, 100%, 97%);
+}
+
+.main {
+  max-width: 94rem;
+  /* max-width: 65.27%; */
+  /* height: 60rem; */
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.6rem;
+  padding-bottom: 0.3rem;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  border-radius: 1.5rem;
+  box-shadow: -5px 5px 20px 0px #9699ab41;
+}
+/************** SIDEBAR **********/
+.sidebar {
+  background-image: url(/assets/images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  padding: 3.4rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.65rem;
+}
+.bar-container {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 0.2rem;
+  margin-top: 0.55rem;
+}
+.circle-number {
+  grid-column: 0/1;
+  grid-row: 1/-1;
+
+  padding: 0.8rem 1.2rem;
+  border: 1px solid hsl(217, 100%, 97%);
+  border-radius: 50%;
+  margin-right: 1.5rem;
+
+  font-size: 1.3rem;
+  color: hsl(217, 100%, 97%);
+  font-weight: 700;
+}
+.step-number {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: hsl(231, 11%, 63%);
+}
+.features {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  color: hsl(217, 100%, 97%);
+}
+
+/************** SECTIONS CONTAINER **********/
+.sections-container {
+  margin-top: 1rem;
+  margin-left: 6.75rem;
+}
+
+.steps-container {
+  padding: 3rem 3.4rem;
+
+  /* max-width: 52rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.2rem;
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 0.8rem;
+}
+.heading {
+  margin-bottom: 3.75rem;
+}
+.heading-text {
+  font-size: 1.6rem;
+  color: hsl(231, 11%, 63%);
+  line-height: 1.6;
+}
+.btn__container {
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  /* position: absolute;
+  transform: translateY(217%); */
+}
+.btn__back {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(231, 11%, 63%);
+  border: none;
+  cursor: pointer;
+}
+.btn__next {
+  font-family: inherit;
+  padding: 1.4rem 2.4rem;
+  margin-left: auto;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(217, 100%, 97%);
+  border: 1px solid hsl(213, 96%, 18%);
+  border-radius: 0.9rem;
+  cursor: pointer;
+}
+.btn__next:active {
+  background-color: hsl(213, 96%, 25%);
+}
+/************** SECTIONS 1 **********/
+.step__1 .btn__next {
+  margin-top: 9.35rem;
+  margin-right: 5rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+}
+.information {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+label {
+  font-size: 1.4rem;
+  color: hsl(213, 96%, 18%);
+}
+.step__1 input {
+  position: relative;
+  padding: 1.4rem 0;
+  border-radius: 0.8rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: 1px solid hsl(229, 24%, 87%);
+  padding-left: 1.4rem;
+  margin-right: 5rem;
+}
+
+input::placeholder {
+  color: hsl(231, 11%, 63%);
+}
+
+.error-message {
+  position: absolute;
+  top: -4%;
+  right: 2%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: hsl(354, 84%, 57%);
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/************** SECTIONS 2 **********/
+/* .step__2 {
+  min-height: 33rem;
+} */
+.step__2 .btn__container {
+  margin-top: 11.5rem;
+}
+.plans__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.8rem;
+}
+.plan-container {
+  max-width: 13.8rem;
+  width: 100%;
+  /* height: 16rem; */
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 0.7rem;
+  cursor: pointer;
+
+  padding-bottom: 1.2rem;
+}
+.plan-container:active {
+  border-color: hsl(243, 100%, 62%);
+}
+.plan-icon {
+  margin-top: 1.8rem;
+  margin-left: 1.5rem;
+}
+.plan-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: hsl(213, 96%, 18%);
+  margin-left: 1.5rem;
+  margin-top: 4.1rem;
+}
+.plan-cost__monthly {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: hsl(231, 11%, 63%);
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.bonus--plan__yearly {
+  display: none;
+  font-size: 1.2rem;
+  color: hsl(213, 96%, 18%);
+  margin-left: 1.5rem;
+  margin-top: 0.4rem;
+  padding-bottom: 0.5rem;
+}
+.plans--period__container {
+  max-width: 90%;
+  display: flex;
+  background-color: hsl(231, 100%, 99%);
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  padding: 1.4rem 0;
+  margin-top: 3.15rem;
+  border-radius: 0.6rem;
+}
+.toggle__period {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 3.8rem;
+  height: 2.1rem;
+  background-color: hsl(213, 96%, 18%);
+  border-radius: 2rem;
+}
+.toggle__circle {
+  width: 1.166rem;
+  height: 1.166rem;
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  position: absolute;
+}
+.toggle__circle {
+  left: 10%;
+  transition: all 0.5s;
+}
+.period {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: hsl(231, 11%, 63%);
+}
+.monthly-period {
+  color: hsl(213, 96%, 18%);
+}
+/************** SECTIONS 3 **********/
+.step__3 .btn__container {
+  margin-top: 8rem;
+}
+.add-ons__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 45rem;
+  gap: 1.6rem;
+  justify-content: center;
+  align-items: center;
+}
+.add_ons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 7fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 0.7rem;
+  padding: 1.2rem;
+  padding-bottom: 0.7rem;
+  cursor: pointer;
+}
+.add_ons.active {
+  border: 1px solid hsl(213, 96%, 35%);
+}
+
+.checkbox {
+  margin-left: 1.1rem;
+  grid-row: 2/3;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.add-ons__title {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: hsl(213, 96%, 18%);
+  margin-left: 1.9rem;
+  margin-bottom: 0.8rem;
+}
+.add-ons__description {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  font-size: 1.4rem;
+  color: hsl(231, 11%, 63%);
+  margin-left: 2rem;
+}
+.add-ons__cost {
+  grid-column: -1;
+  grid-row: 2/3;
+  font-size: 1.4rem;
+  color: hsl(213, 96%, 35%);
+  margin-right: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+/************** SECTIONS 4 **********/
+.billing__container {
+  max-width: 45rem;
+  background-color: hsl(231, 100%, 98%);
+  border-radius: 0.6rem;
+  padding: 0 2rem 2.5rem 2rem;
+}
+.selected__plan {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.selected__plan--name {
+  font-size: 1.6rem;
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  margin-left: 0.4rem;
+  margin-top: -0.55rem;
+}
+.change {
+  grid-column: 1;
+  grid-row: 3/4;
+  font-size: 1.4rem;
+  color: hsl(231, 11%, 63%);
+  margin-left: 0.4rem;
+  margin-top: -0.7rem;
+}
+.change:active {
+  color: hsl(246, 100%, 76%);
+  font-weight: 500;
+}
+.selected__plan--cost {
+  grid-column: 3;
+  grid-row: 2;
+  font-size: 1.6rem;
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+  margin-top: 0.68rem;
+  margin-right: 0.6rem;
+}
+.line {
+  width: 100%;
+  border-top: 1px solid hsl(229, 24%, 87%);
+  margin-top: 0.9rem;
+}
+.selected__add-ons {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 2rem;
+  margin-top: 1.9rem;
+  margin-left: 0.4rem;
+}
+.add-ons__summary {
+  display: flex;
+  justify-content: space-between;
+}
+.selected__add-ons--name {
+  font-size: 1.4rem;
+  color: hsl(231, 11%, 63%);
+}
+.selected__add-ons--cost {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: hsl(213, 96%, 21%);
+  margin-right: 0.6rem;
+}
+.total-container {
+  max-width: 45rem;
+  display: flex;
+  justify-content: space-between;
+}
+.total--name {
+  font-size: 1.4rem;
+  color: hsl(231, 11%, 63%);
+  margin-left: 2.4rem;
+  margin-top: 3rem;
+}
+.total-cost {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(243, 100%, 62%);
+  margin-right: 2.5rem;
+  margin-top: 2.4rem;
+}
+.step__4 .btn__container {
+  margin-top: 12.65rem;
+}
+.btn__confirm {
+  font-family: inherit;
+  padding: 1.4rem 3.1rem;
+  margin-left: auto;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: hsl(243, 100%, 62%);
+  color: hsl(217, 100%, 97%);
+  border: 1px solid hsl(243, 100%, 62%);
+  border-radius: 0.9rem;
+  cursor: pointer;
+}
+.btn__confirm:active {
+  background-color: hsl(246, 100%, 76%);
+  border-color: hsl(246, 100%, 76%);
+}
+/************** SECTIONS 5 **********/
+.thank-you__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-right: 0.4rem;
+  margin-top: 12.5rem;
+}
+.icon {
+  margin-bottom: 3rem;
+}
+/*** NEEDS JavaScript ***/
+
+/* sec1 */
+.bar-container.active .circle-number {
+  background-color: hsl(206, 94%, 87%);
+  color: #000;
+  border: 1px solid hsl(206, 94%, 87%);
+}
+.bar-container.active .features {
+  color: hsl(0, 0%, 100%);
+}
+#name.error {
+  border: 1px solid hsl(354, 84%, 57%);
+  outline: none;
+}
+#email.error {
+  border: 1px solid hsl(354, 84%, 57%);
+  outline: none;
+}
+#num.error {
+  border: 1px solid hsl(354, 84%, 57%);
+  outline: none;
+}
+/* sec2 */
+.plans__container.yearly ~ .btn__container {
+  margin-top: 9.2rem;
+}
+.plans__container.yearly .bonus--plan__yearly {
+  display: block;
+}
+
+.plan-container.active {
+  border-color: hsl(243, 100%, 62%);
+  background-color: hsl(231, 100%, 99%);
+}
+.plans--period__container.yearly .yearly-period {
+  color: hsl(213, 96%, 18%);
+}
+.plans--period__container.yearly .monthly-period {
+  color: hsl(231, 11%, 63%);
+}
+.plans--period__container.yearly .toggle__circle {
+  left: 50%;
+  transition: all 0.5s;
+}
+
+/* sec5 */
+.thank-you__container {
+  max-width: 45rem;
+  padding-bottom: 10rem;
+}
+
+.highlight {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+
+/* _______________ */
+
+.hidden {
+  /* opacity: 0; */
+  /* transition: all 1s; */
+  /* pointer-events: none; */
+  /* visibility: hidden; */
+  display: none;
+}
+/************************/
