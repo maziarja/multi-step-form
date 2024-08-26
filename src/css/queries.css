@@ -126,7 +126,7 @@
     border-radius: 1.5rem;
   }
   .steps-container {
-    min-height: 68rem;
+    height: 68rem;
     justify-content: flex-start;
   }
   .btn__container {
