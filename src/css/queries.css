@@ -19,13 +19,14 @@
   .step__1 .btn__next {
     margin-right: 1rem;
   }
+  .btn__container {
+    max-width: 100%;
+  }
+
   /*********** SECTION 2 ***********/
   .step__2 {
     max-width: 60rem;
   }
-  /* .plans__container {
-    justify-content: center;
-  } */
 }
 
 /* ***********************************
@@ -38,6 +39,9 @@
   }
   .main {
     grid-template-columns: 22rem 1fr;
+  }
+  .btn__container {
+    max-width: 100%;
   }
 }
 /* ***********************************

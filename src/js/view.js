@@ -32,7 +32,7 @@ class View {
       errorEmail.textContent = "This field is required";
       emailAddress.classList.add("error");
     } else if (!emailPattern.test(emailAddress.value)) {
-      errorEmail.textContent = "The email address is not formatted correctly";
+      errorEmail.textContent = "Invalid email address";
       emailAddress.classList.add("error");
     } else {
       errorEmail.textContent = "";

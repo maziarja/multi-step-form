@@ -21,7 +21,7 @@ export const dataValidCheck = function (data) {
     )
       throw new Error("This field is required");
     if (!emailPattern.test(data.emailAddress))
-      throw new Error("The email address is not formatted correctly");
+      throw new Error("Invalid email address");
     // update state
     state.fullName = data.fullName;
     state.emailAddress = data.emailAddress;
